@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SeaFood Case Study - Truffle Webpack Demo w/ Frontend</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <div id="top">
+    <h1>SeaFood </h1>
+    <h6>Case Study</h6>
+    <div class="_idContainer024" id="login"></div>
+  </div>
+  <div id="bottom">
+    <div id="transfer" class="transfer">
+      <div class="container1">
+        <h2>Transfer Entities</h2>
+      </div>
+      <div id="transferEntity" class="transferEntity" >
+        <select class="wrapper-dropdown" id="entitySelect" onchange="App.onChangeEntitySelect(this.value);">Select Entity</select>
+        <select class="wrapper-dropdown" id="oldOwnerSelect" disabled onchange="App.onChangeOwnerSelect(this.value,this.id);">Previous Owner</select>
+        <select class="wrapper-dropdown" id="senderSelect" disabled>Sender Address</select>
+        <select class="wrapper-dropdown" id="newOwnerSelect" onchange="App.onChangeOwnerSelect(this.value,this.id);">Current Owner</select>
+        <select class="wrapper-dropdown" id="receiverSelect" disabled>Receiver Address</select>
+        <button class="transferButton"type="button" onclick="App.transferEntity()" id="entityTransaction">Transfer</button>
+      </div>
+      <div id="errorDiv" style="color:red"></div>
+    </div>
+    <div id="blockchain" class="blockchain">
+      <div class="container2">
+        <h2>Complete Blockchain View</h2>
+      </div>
+      <div class="blockchainDetails">
+        <button id="stakeHolders" data-original-title="Inspect the list of agents" onclick="App.createStakeHoldersTable()">Stake Holders</button>
+        <button id="entity" data-original-title="Inspect the list of agents" onclick="App.createEntityTable()">Entities</button>
+      </div>
+      <div class="tableDetails" id="table" />
+    </div>
+
+    <div id="transaction" class="transaction">
+      <div class="container3">
+        <h2>Transactions</h2>
+      </div>
+      <div id="transactionRecords">
+        <table id="transactionTable" class="records">
+          <th>Block Hash</th>
+          <th>Block Number</th>
+          <th>Transaction Hash</th>
+          <th>From</th>
+          <th>Old Owner</th>
+          <th>To</th>
+          <th>New Owner</th>
+          <th>Entity Name</th>
+          <th>Amount</th>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

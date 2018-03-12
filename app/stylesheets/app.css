@@ -1,0 +1,251 @@
+:root {
+  --font-family: 'Open Sans', sans-serif;
+  --text-transform: uppercase;
+  --left: 300px;
+  --container-height: 30px;
+  font-size: 13px;
+  font-family: var(--font-family);
+}
+
+html {
+  text-transform: var(--text-transform);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeSpeed;
+  position: absolute;
+}
+
+#top {
+  height: 10%;
+  background-color: rgb(88, 100, 103);
+}
+
+#bottom {
+  height: 90%;
+  background-color: rgb(11, 17, 22);
+}
+
+.top_container {
+  background-color: rgba(11, 17, 22, 0.5);
+  position: relative;
+  left: 69%;
+  bottom: 186%;
+  padding-left: 10px;
+  width: 29%;
+}
+
+h1 {
+  margin-left: 100px;
+  margin-top: 0;
+  font-size: 30px;
+  padding-top: 5px;
+  color: rgb(11, 17, 22);
+}
+
+h6 {
+  color: rgba(11, 17, 22, 0.5);
+  font-size: 15px;
+  position: relative;
+  top: -51px;
+  left: 231px;
+}
+
+.container1 {
+  background-color: rgba(88, 100, 103, 0.5);
+  position: absolute;
+  align-content: center;
+  font-family: var(--font-family);
+  font-size: 13px;
+  width: 20%;
+  height: var(--container-height);
+}
+
+.transfer {
+  padding-left: 50px;
+  padding-top: 50px;
+  height: 15%;
+  /* padding-bottom: 57px; */
+}
+
+.transferEntity {
+  left: var(--left);
+  position: relative;
+}
+
+.transferButton {
+  position: relative;
+  left: 51%;
+  top: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background: rgb(74, 188, 147);
+  color: rgb(11, 17, 22);
+}
+
+.blockchain {
+  padding-left: 50px;
+  padding-top: 50px;
+  height: 25%;
+}
+
+.tableDetails {
+  left: var(--left);
+  position: relative;
+}
+
+.blockchainDetails {
+  position: relative;
+  /* top: 45px; */
+  /* margin-left: 22px; */
+}
+
+.transaction {
+  padding-left: 50px;
+  padding-top: 50px;
+  /* padding-bottom: 57px; */
+}
+
+.records {
+  position: relative;
+  left: var(--left);
+  /* top: 45px; */
+}
+
+h2, h3, h4 {
+  margin-left: 10px;
+  text-align: center;
+  font-family: var(--font-family);
+  text-transform: var(--text-transform);
+  font-size: 12px;
+  color: rgba(88, 100, 103, 0.9);
+  position: relative;
+  top: -3px;
+}
+
+table {
+  margin: 0px;
+  position: relative;
+  color: rgb(88, 100, 103);
+  top: -10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid rgb(88, 100, 103);
+}
+
+tr {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+
+th {
+  position: relative;
+  border-bottom: 1px solid rgb(88, 100, 103);
+  text-align: center;
+  word-wrap: break-word;
+  max-width: 150px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+​ td {
+  /* position: relative;
+  word-wrap: break-word;
+  /* padding: 10px; */
+  width: 100px;
+  white-space: nowrap;
+  max-width: 100px;
+  /* border-top: 1px solid rgb(88, 100, 103); */
+}
+
+ table#transactionTable td {
+  white-space: nowrap;
+  width: 105px;
+  align-content: center;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  float: left;
+  /* border-bottom: 1px solid rgb(88, 100, 103); */
+}
+
+table#transactionTable th {
+  white-space: nowrap;
+  /* border-bottom: 1px solid rgb(88, 100, 103); */
+  width: 87px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  float: left;
+}
+
+
+button {
+  background-color: transparent;
+  text-transform: var(--text-transform);
+  font-size: 13px;
+  color: rgba(88, 100, 103, 0.9);
+  text-align: center;
+  /* text-decoration: none; */
+  /* display: inline-block; */
+}
+
+a {
+  color: rgb(74, 188, 147);
+  text-decoration: none;
+}
+
+label {
+  background: rgb(88, 100, 103)
+}
+
+.container2 {
+  background-color: rgba(88, 100, 103, 0.5);
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 35px;
+  margin-top: 20px;
+  left: 2%;
+  top: -21%;
+}
+
+.container3 {
+  background-color: rgba(88, 100, 103, 0.5);
+  position: relative;
+  text-align: center;
+  width: 20%;
+  height: 35px;
+  margin-top: 20px;
+  left: 2%;
+  top: -21%;
+}
+
+.wrapper-dropdown, select {
+  position: relative;
+  width: 150px;
+  height: var(--container-height);
+  color: rgba(88, 100, 103, 0.9);
+  background: transparent;
+  text-transform: var(--text-transform);
+  /* text-decoration: none;
+  margin-left: 10px;
+  display: inline-block;
+  cursor: pointer; */
+  padding: 1px;
+  box-shadow: 0 1px 0 rgba(1, 0, 0, 1);
+}
+
+.dropdown:hover .wrapper-dropdown {
+  position: relative;
+  display: inline-block;
+  background: black;
+}
